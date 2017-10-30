@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_nav_bg"
+    android:paddingTop="@dimen/dim_5"
+
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_tab_1"
+        android:layout_width="0dp"
+        android:layout_height="?actionBarSize"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/btn_tab_1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="-15dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:background="@null"-->
+        <!--android:padding="@dimen/dim_10"-->
+        <!--android:src="@drawable/search_active" />-->
+
+        <TextView
+            android:id="@+id/tv_explore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Explore"
+            android:drawableTop="@drawable/explore_act"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tab_2"
+        android:layout_width="0dp"
+        android:layout_height="?actionBarSize"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/btn_tab_2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="-15dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:background="@null"-->
+        <!--android:padding="@dimen/dim_10"-->
+        <!--android:src="@drawable/services_inactive" />-->
+
+        <TextView
+            android:id="@+id/tv_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="News"
+            android:drawableTop="@drawable/new_in"
+            android:textColor="#707070"
+            android:textSize="@dimen/dim_16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tab_3"
+        android:layout_width="0dp"
+        android:layout_height="?actionBarSize"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/btn_tab_3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="-15dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:background="@null"-->
+        <!--android:padding="@dimen/dim_10"-->
+        <!--android:src="@drawable/notifications_inactive" />-->
+
+        <TextView
+            android:id="@+id/tv_offers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Offers"
+            android:drawableTop="@drawable/offers_in"
+            android:textColor="#707070"
+            android:textSize="@dimen/dim_16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tab_4"
+        android:layout_width="0dp"
+        android:layout_height="?actionBarSize"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/btn_tab_4"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="-15dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:padding="@dimen/dim_10"-->
+        <!--android:background="@null"-->
+        <!--android:src="@drawable/account_inactive" />-->
+
+        <TextView
+            android:id="@+id/tv_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/feed_in"
+            android:text="Feed"
+            android:textColor="#707070"
+            android:textSize="@dimen/dim_16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

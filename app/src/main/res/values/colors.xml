@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EFEEEE</color>
+    <color name="colorPrimaryDark">#EFEEEE</color>
+    <color name="colorAccent">#8A8787</color>
+    <color name="text_color_volet">#3949AB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="pink">#ED365B</color>
+    <color name="blue">#3949AB</color>
+    <color name="green_text">#4caf50</color>
+</resources>

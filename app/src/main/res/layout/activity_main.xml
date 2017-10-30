@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.everone.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lnr_nav_bottom"
+            android:background="@color/white"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim_10">
+
+                <ImageButton
+                    android:id="@+id/img_btn_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/ic_menu" />
+
+                <EditText
+                    android:id="@+id/edt_search_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:padding="@dimen/dim_5"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:hint="Search for the offers, deals"
+                    android:gravity="center"
+                    android:textSize="@dimen/dim_16"
+                    android:layout_marginRight="@dimen/dim_10"
+                    android:layout_toLeftOf="@+id/img_btn_more"
+                    android:layout_toRightOf="@+id/img_btn_menu"
+                    android:background="@drawable/search_box_bg"
+                     />
+                <!--<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/ic_search"
+                    android:layout_centerInParent="true"/>-->
+                <ImageButton
+                    android:id="@+id/img_btn_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/ic_more_vert" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim_10">
+
+                <TextView
+                    android:id="@+id/tv_label_offers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offers"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/dim_18" />
+
+                <View
+                    android:layout_width="@dimen/dim_150"
+                    android:layout_height="@dimen/dim_1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:layout_toRightOf="@+id/tv_label_offers"
+                    android:background="#C0C0C0" />
+
+            </RelativeLayout>
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider_home_frag"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_120"
+                android:layout_margin="@dimen/dim_10" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F0F0F0"
+
+                    android:orientation="vertical"
+                    android:padding="@dimen/dim_10">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="@dimen/dim_11"
+                        android:padding="@dimen/dim_10"
+                        android:id="@+id/card_car_booking"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/dim_5">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dim_10">
+
+                            <ImageView
+                                android:id="@+id/img_cab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:src="@drawable/cab" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                               android:layout_toRightOf="@+id/img_cab"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dim_25"
+                                android:text="Cab Booking"
+                                android:textSize="@dimen/dim_18" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:src="@drawable/ic_action_name" />
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:elevation="@dimen/dim_11"
+                        android:id="@+id/card_credit_card"
+                        android:padding="@dimen/dim_10"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/dim_5">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dim_10">
+
+                            <ImageView
+                                android:id="@+id/img_credit_card"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:src="@drawable/cradir_card" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/img_credit_card"
+                                android:layout_marginLeft="@dimen/dim_25"
+                                android:layout_centerVertical="true"
+                                android:text="Apply for Credit Card"
+                                android:textSize="@dimen/dim_18" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:src="@drawable/ic_action_name" />
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:elevation="@dimen/dim_11"
+                        android:padding="@dimen/dim_10"
+                        android:id="@+id/card_flight"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/dim_5">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dim_10">
+
+                            <ImageView
+                                android:id="@+id/img_flight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:src="@drawable/airplane" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/img_flight"
+                                android:layout_marginLeft="@dimen/dim_25"
+                                android:layout_centerVertical="true"
+                                android:text="Flight Booking"
+                                android:textSize="@dimen/dim_18" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:src="@drawable/ic_action_name" />
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:elevation="@dimen/dim_11"
+                        android:id="@+id/card_food"
+                        android:padding="@dimen/dim_10"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/dim_5">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dim_10">
+
+                            <ImageView
+                                android:id="@+id/img_food"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:src="@drawable/food" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                               android:layout_toRightOf="@+id/img_food"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dim_25"
+                                android:text="Food"
+                                android:textSize="@dimen/dim_18" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:src="@drawable/ic_action_name" />
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:elevation="@dimen/dim_11"
+                        android:padding="@dimen/dim_10"
+                        android:id="@+id/card_hotel"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/dim_5">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dim_10">
+
+                            <ImageView
+                                android:id="@+id/img_hostel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:src="@drawable/hotel" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/img_hostel"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dim_25"
+                                android:text="Hotels Booking"
+                                android:textSize="@dimen/dim_18" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:src="@drawable/ic_action_name" />
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnr_nav_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <include layout="@layout/bottom" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="com.everone.fragment.FragmentDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+</android.support.v4.widget.DrawerLayout>
