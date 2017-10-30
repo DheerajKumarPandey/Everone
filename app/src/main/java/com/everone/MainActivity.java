@@ -1,5 +1,6 @@
 package com.everone;
 
+import android.content.Intent;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -99,6 +100,8 @@ public class MainActivity extends CustomActivity implements BaseSliderView.OnSli
                 Animation shake;
                 shake = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake);
                 card_car_booking.startAnimation(shake);
+                startActivity(new Intent(MainActivity.this, CabBookingActivity.class));
+
             }
         });
         card_credit_card.setOnClickListener(new View.OnClickListener() {
@@ -148,7 +151,6 @@ public class MainActivity extends CustomActivity implements BaseSliderView.OnSli
 
     @Override
     public void onPageSelected(int position) {
-////hkjhahkjgahkjhagkjhkjaghkjaghkjahgk
     }
 
     @Override

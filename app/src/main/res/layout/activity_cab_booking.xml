@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical"
+    tools:context="com.everone.CabBookingActivity">
+
+    <include layout="@layout/toolbar_new" />
+
+    <LinearLayout
+        android:id="@+id/lnr_top_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_new"
+        android:layout_margin="@dimen/dim_5"
+        android:background="@drawable/search_back"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dim_5"
+            android:paddingLeft="@dimen/dim_10"
+            android:paddingTop="@dimen/dim_5"
+            android:text="Your Current Location"
+            android:textSize="@dimen/dim_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_1"
+            android:layout_marginLeft="@dimen/dim_2"
+            android:layout_marginRight="@dimen/dim_2"
+            android:background="@color/colorAccent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/dim_5"
+                android:paddingLeft="@dimen/dim_10"
+                android:paddingTop="@dimen/dim_5"
+                android:text="Enter Drop Location"
+                android:textSize="@dimen/dim_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dim_5"
+                android:background="@drawable/add_button"
+                android:paddingBottom="@dimen/dim_5"
+
+                android:paddingLeft="@dimen/dim_15"
+                android:paddingRight="@dimen/dim_15"
+                android:paddingTop="@dimen/dim_5"
+                android:text="Add"
+                android:textSize="@dimen/dim_16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_130">
+
+        <!--<fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=" com.everone.CabBookingActivity" />-->
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_strip"
+            android:paddingLeft="@dimen/dim_5">
+
+            <ImageView
+                android:id="@+id/img_cash_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/cash_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_cash_back"
+                android:text="10% cash back on your 1st \n 4 Uber rides Code : XXXXXX  " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/connect_button"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dim_5"
+                android:paddingLeft="@dimen/dim_10"
+                android:paddingRight="@dimen/dim_10"
+                android:paddingTop="@dimen/dim_5"
+                android:text="Connect"
+                android:textSize="@dimen/dim_18" />
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/black"
+            app:tabMode="fixed"
+            app:tabTextColor="@color/black" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,263 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical"
+    tools:context="com.everone.fragment.UberFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dim_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="CABS"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="FARE(FOR 3KMS)"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="CABS"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_30"
+        android:background="@drawable/back_strip"
+        android:gravity="center"
+        android:text="Fare is lower or equal to the fare on Uber"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dim_10"
+    android:orientation="horizontal"
+    android:background="@drawable/back_strip">
+
+    <ImageView
+        android:id="@+id/img_uber_pool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="@null"
+        android:src="@drawable/user_pool" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:id="@+id/lnr_tv_pool"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_uber_pool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uberPOOL"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available"
+            android:textColor="#2AB65A"
+            android:textSize="@dimen/dim_12" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs 58 - 80"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cheapest Cab"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#D5302F"
+            android:paddingLeft="@dimen/dim_10"
+            android:paddingRight="@dimen/dim_10"
+            android:paddingTop="@dimen/dim_5"
+            android:paddingBottom="@dimen/dim_5"
+            android:background="@drawable/red_tv_bg"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dim_12" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 mins"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/dim_18"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_10"
+        android:orientation="horizontal"
+        android:background="@drawable/back_strip">
+
+        <ImageView
+            android:id="@+id/img_uber_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/uber_cab" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:id="@+id/lnr_tv_go"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_uber_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="uberGO"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available"
+                android:textColor="#2AB65A"
+                android:textSize="@dimen/dim_12" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs 58 - 80"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim_16" />
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 mins"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/dim_18"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_10"
+        android:orientation="horizontal"
+        android:background="@drawable/back_strip">
+
+        <ImageView
+            android:id="@+id/img_uber_hire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/uber_cab" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:id="@+id/lnr_tv_hire"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_uber_hire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="uberHIRE"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available"
+                android:textColor="#2AB65A"
+                android:textSize="@dimen/dim_12" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs 58 - 80"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim_16" />
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 mins"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/dim_18"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</LinearLayout>

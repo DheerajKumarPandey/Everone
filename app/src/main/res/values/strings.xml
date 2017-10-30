@@ -22,7 +22,7 @@
 
     <string name="drawer_open">openDrawer</string>
     <string name="drawer_close">closeDrawer</string>
-
+    <string name="Rs">\u20B9</string>
     <string-array name="nav_drawer_labels">
         <item>Home</item>
         <item>Home Service Requests</item>
