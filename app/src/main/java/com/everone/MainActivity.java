@@ -148,7 +148,7 @@ public class MainActivity extends CustomActivity implements BaseSliderView.OnSli
 
     @Override
     public void onPageSelected(int position) {
-
+////hkjhahkjgahkjhagkjhkjaghkjaghkjahgk
     }
 
     @Override
